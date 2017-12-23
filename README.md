@@ -7,18 +7,17 @@ To use Open Index Protocol in a decentralized/trustless way, users must run thre
   * [Github Repo](https://github.com/ipfs/go-ipfs) | [Project Site](https://ipfs.io/)
 * OIP Daemon
   * [Github Release](https://github.com/dloa/oip-daemon/releases)
-* ''Users may wish to also run the Bitcoin wallet daemon, bitcoind''
-** [Github Repo](https://github.com/bitcoin/bitcoin) | [Bitcoin.org](https://bitcoin.org/)
+* *Users may wish to also run the Bitcoin wallet daemon, bitcoind*
+  * [Github Repo](https://github.com/bitcoin/bitcoin) | [Bitcoin.org](https://bitcoin.org/)
 
 ## RPC Access to Florincoind
 
-* The first step is to set up your '''''florincoin.conf''''' file. If it doesn't exist, create it.
+* The first step is to set up your *florincoin.conf* file. If it doesn't exist, create it.
   * For Windows users, it should go here: `%App Data%/Romaing/Florincoin/florincoin.conf`
   * For Mac users, it should go here: `~/Library/Application Support/Florincoin/florincoin.conf`
   * For *nix users, it should go here: <code>~/.florincoin/florincoin.conf</code>
 
 Make sure you've allowed RPC access from localhost, and that you're running in server mode with txindex enabled:
-
 <code><pre>rpcuser=flo rpc username  
 rpcpassword=flo rpc password  
 rpcallowip=127.0.0.1  
@@ -29,7 +28,6 @@ daemon=1
 txindex=1</pre></code>
 
 You'll probably also want to include the following network nodes:
-
 <code><pre>addnode=176.9.59.110  
 addnode=188.166.6.99  
 addnode=54.209.141.153  
